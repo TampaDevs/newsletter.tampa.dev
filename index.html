@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <title>Tampa Devs Newsletter Signup</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VV1YTRRM50" type="b13fc475b370506fef8d0e0f-text/javascript"></script>
+  <script type="b13fc475b370506fef8d0e0f-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VV1YTRRM50');
+  </script>
+
+  <meta property="og:title" content="Tampa Devs">
+  <meta property="og:description" content="Tampa Devs is the fastest-growing education and technology community for software developers in Tampa Bay.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://tampadevs.com/_assets/img/tampa-devs-open-graph.webp">
+  <meta property="og:url" content="https://www.tampadevs.com/">
+
+  <style>
+    #people{overflow:hidden}
+    #people-banner{height:auto;max-width:100%}
+    #td-masthead{max-width:12.5%;padding:1em}
+    *{box-sizing:border-box}
+    .container{margin:0 auto;max-width:1020px;padding:0 50px;width:100%}
+    .td-nav{background-color:#4e5569;color:#fff;font-size:14px;line-height:20px;overflow:hidden;text-align:center;text-transform:uppercase;width:100%}
+    .td-newsletter{background-color:#ee5c53;color:#fff;margin:0;padding:10px 0}
+    .td-newsletter__field{display:inline-block;display:block;margin:0;margin:0 0 1em;position:relative}
+    .td-newsletter__field input{background-color:#cb4e47;border:none;border-radius:5px;color:#fff;font-size:.825em;padding:10px;width:100%}
+    .td-newsletter__field input{background-color:#cb4e47;border:none;border-radius:5px;color:#fff;font-size:.825em;padding:10px;width:100%}
+    .td-newsletter__field input[type="submit"]{background-color:#fff;border:1px solid #ee5c53;border-color:#ee5c53;color:#566075;cursor:pointer;text-transform:uppercase;transition:all .4s}
+    .td-newsletter__field input[type="submit"]{background-color:#fff;border:1px solid #ee5c53;color:#566075;cursor:pointer;text-transform:uppercase;transition:all .4s}
+    .td-newsletter__field input[type="submit"]:hover{background-color:#ee5c53;border-color:#fff;color:#fff}
+    .td-newsletter__group{display:grid;grid-column-gap:20px;grid-template-columns:repeat(4,1fr)}
+    body{color:#ee5c53;font-family:Montserrat,Helvetica,Arial,Lucida,sans-serif;height:100%;margin:0;overflow:hidden;overflow-x:hidden;padding:0}
+    label{display:none}
+  </style>
+</head>
+
+<body>
+  <nav class="td-nav">
+      <div class="container">
+          <a href="https://www.tampadevs.com/"><img id="td-masthead" src="https://www.tampadevs.com/_assets/misc/logos/tampa-devs.svg" /></a>
+      </div>
+  </nav>
+  <div class="td-newsletter">
+      <section class="container" id="newsletter">
+          <h2>Keep in touch</h2>
+          <p>Stay informed with local tech news, upcoming events, job opportunities, and more from Tampa Devs.</p>
+          <form action="https://newsletter.api.tampa.dev/subscribe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+              <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_0faea843d029399bef7962992_686a0f7b4b" tabindex="-1" value="">
+              </div>
+              <div class="td-newsletter__group">
+                  <div class="td-newsletter__field mc-field-group">
+                      <label for="mce-FNAME">First Name</label>
+                      <input type="text" value="" name="firstname" class="" id="mce-FNAME" placeholder="First name">
+                  </div>
+                  <div class="td-newsletter__field mc-field-group">
+                      <label for="mce-LNAME">Last Name</label>
+                      <input type="text" value="" name="lastname" class="" id="mce-LNAME" placeholder="Last name">
+                  </div>
+                  <div class="td-newsletter__field mc-field-group">
+                      <label for="mce-EMAIL">Email Address</label>
+                      <input type="email" value="" name="email" class="required email" id="mce-EMAIL" placeholder="Email Address">
+                  </div>
+                  <div class="td-newsletter__field">
+                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                  </div>
+              </div>
+          </form>
+          <script type="text/javascript">
+              function formSubmit(e) {
+                var req = new XMLHttpRequest();
+                req.open('POST', "https://newsletter.api.tampa.dev/subscribe", true);
+        
+                req.onload = function() { 
+                  document.getElementById("mc-embedded-subscribe-form").reset();
+                  document.getElementById("mc-embedded-subscribe").value = "Subscribed!"
+                  document.getElementById("mc-embedded-subscribe").style.backgroundColor = "#B5E0B8"
+                  console.log(req.responseText);
+                };
+      
+                req.onerror = function() {
+                  console.log("Newsletter subscription failed.")
+                };
+      
+                req.send(new FormData(e.target));
+      
+                e.preventDefault();
+              }
+      
+              (function () {document.getElementById("mc-embedded-subscribe-form").addEventListener("submit", formSubmit)})();
+          </script>
+
+      </section>
+  </div>
+  <div id="people">
+      <section><img id="people-banner" src="https://www.tampadevs.com/_assets/img/happy_people2.webp"></img>
+      </section>
+  </div>
+</body>
