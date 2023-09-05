@@ -32,7 +32,7 @@
     .td-newsletter{background-color:#ee5c53;color:#fff;margin:0;padding:10px 0}
     .td-newsletter__field{display:inline-block;display:block;margin:0;margin:0 0 1em;position:relative}
     .td-newsletter__field input{background-color:#cb4e47;border:none;border-radius:5px;color:#fff;font-size:.825em;padding:10px;width:100%}
-    .td-newsletter__field input{background-color:#cb4e47;border:none;border-radius:5px;color:#fff;font-size:.825em;padding:10px;width:100%}
+    .td-newsletter__field input{background-color:#cb4e47!important;border:none;border-radius:5px;color:#fff!important;font-size:.825em;padding:10px;width:100%}
     .td-newsletter__field input[type="submit"]{background-color:#fff;border:1px solid #ee5c53;border-color:#ee5c53;color:#566075;cursor:pointer;text-transform:uppercase;transition:all .4s}
     .td-newsletter__field input[type="submit"]{background-color:#fff;border:1px solid #ee5c53;color:#566075;cursor:pointer;text-transform:uppercase;transition:all .4s}
     .td-newsletter__field input[type="submit"]:hover{background-color:#ee5c53;border-color:#fff;color:#fff}
@@ -63,20 +63,20 @@
               <div class="td-newsletter__group">
                   <div class="td-newsletter__field mc-field-group">
                       <label for="mce-FNAME">First Name</label>
-                      <input type="text" value="" name="firstname" class="" id="mce-FNAME" placeholder="First name">
+                      <input type="text" value="" name="firstname" class="" id="mce-FNAME" placeholder="First name" autocomplete="off">
                   </div>
                   <div class="td-newsletter__field mc-field-group">
                       <label for="mce-LNAME">Last Name</label>
-                      <input type="text" value="" name="lastname" class="" id="mce-LNAME" placeholder="Last name">
+                      <input type="text" value="" name="lastname" class="" id="mce-LNAME" placeholder="Last name" autocomplete="off">
                   </div>
                   <div class="td-newsletter__field mc-field-group">
                       <label for="mce-EMAIL">Email Address</label>
-                      <input type="email" value="" name="email" class="required email" id="mce-EMAIL" placeholder="Email Address">
-                      <input type="hidden" name="phone" class="required phone" id="mce-phone" value="(813) 555-0199" placeholder="Phone">
+                      <input type="email" value="" name="email" class="required email" id="mce-EMAIL" placeholder="Email Address" autocomplete="off">
+                      <input type="hidden" name="phone" class="required phone" id="mce-phone" value="(813) 555-0199" placeholder="Phone" autocomplete="off">
                   </div>
                   <div class="td-newsletter__field mc-field-group" style="display: none">
                       <label for="mce-verify-EMAIL">Verify Email Address</label>
-                      <input type="email" value="" name="verify_email" class="required email" id="mce-EMAIL-verify" placeholder="Verify Email Address">
+                      <input type="email" value="" name="verify_email" class="required email" id="mce-EMAIL-verify" placeholder="Verify Email Address" autocomplete="off">
                   </div>
                   <div class="td-newsletter__field">
                       <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
