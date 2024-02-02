@@ -1,95 +1,69 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <title>Tampa Devs Newsletter Signup</title>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VV1YTRRM50" type="b13fc475b370506fef8d0e0f-text/javascript"></script>
-  <script type="b13fc475b370506fef8d0e0f-text/javascript">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-VV1YTRRM50');
-  </script>
-
-  <meta property="og:title" content="Tampa Devs">
-  <meta property="og:description" content="Tampa Devs is the fastest-growing education and technology community for software developers in Tampa Bay.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:image" content="https://tampadevs.com/_assets/img/tampa-devs-open-graph.webp">
-  <meta property="og:url" content="https://www.tampadevs.com/">
-
-  <style>
-    #people{overflow:hidden}
-    #people-banner{height:auto;max-width:100%}
-    #td-masthead{max-width:12.5%;padding:1em}
-    *{box-sizing:border-box}
-    .container{margin:0 auto;max-width:1020px;padding:0 50px;width:100%}
-    .td-nav{background-color:#4e5569;color:#fff;font-size:14px;line-height:20px;overflow:hidden;text-align:center;text-transform:uppercase;width:100%}
-    .td-newsletter{background-color:#ee5c53;color:#fff;margin:0;padding:10px 0}
-    .td-newsletter__field{display:inline-block;display:block;margin:0;margin:0 0 1em;position:relative}
-    .td-newsletter__field input{background-color:#cb4e47;border:none;border-radius:5px;color:#fff;font-size:.825em;padding:10px;width:100%}
-    .td-newsletter__field input{background-color:#cb4e47!important;border:none;border-radius:5px;color:#fff!important;font-size:.825em;padding:10px;width:100%}
-    .td-newsletter__field input[type="submit"]{background-color:#fff;border:1px solid #ee5c53;border-color:#ee5c53;color:#566075;cursor:pointer;text-transform:uppercase;transition:all .4s}
-    .td-newsletter__field input[type="submit"]{background-color:#fff;border:1px solid #ee5c53;color:#566075;cursor:pointer;text-transform:uppercase;transition:all .4s}
-    .td-newsletter__field input[type="submit"]:hover{background-color:#ee5c53;border-color:#fff;color:#fff}
-    .td-newsletter__group{display:grid;grid-column-gap:20px;grid-template-columns:repeat(4,1fr)}
-    body{color:#ee5c53;font-family:Montserrat,Helvetica,Arial,Lucida,sans-serif;height:100%;margin:0;overflow:hidden;overflow-x:hidden;padding:0}
-    label{display:none}
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tampa Devs Newsletter Signup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VV1YTRRM50"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VV1YTRRM50');
+    </script>
 </head>
 
-<body>
-  <nav class="td-nav">
-      <div class="container">
-          <a href="https://www.tampadevs.com/"><img id="td-masthead" src="https://www.tampadevs.com/_assets/misc/logos/tampa-devs.svg" /></a>
-      </div>
-  </nav>
-  <div class="td-newsletter">
-      <section class="container" id="newsletter">
-          <h2>Keep in touch</h2>
-          <p>Stay informed with local tech news, upcoming events, job opportunities, and more from Tampa Devs.</p>
-          <form action="https://newsletter.api.tampa.dev/subscribe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-              <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display:none"></div>
-                  <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="b_0faea843d029399bef7962992_686a0f7b4b" tabindex="-1" value="">
-              </div>
-              <div class="td-newsletter__group">
-                  <div class="td-newsletter__field mc-field-group">
-                      <label for="mce-FNAME">First Name</label>
-                      <input type="text" value="" name="firstname" class="" id="mce-FNAME" placeholder="First name" autocomplete="off">
-                  </div>
-                  <div class="td-newsletter__field mc-field-group">
-                      <label for="mce-LNAME">Last Name</label>
-                      <input type="text" value="" name="lastname" class="" id="mce-LNAME" placeholder="Last name" autocomplete="off">
-                  </div>
-                  <div class="td-newsletter__field mc-field-group">
-                      <label for="mce-EMAIL">Email Address</label>
-                      <input type="email" value="" name="email" class="required email" id="mce-EMAIL" placeholder="Email Address" autocomplete="off">
-                      <input type="hidden" name="phone" class="required phone" id="mce-phone" value="(813) 555-0199" placeholder="Phone" autocomplete="off">
-                  </div>
-                  <div class="td-newsletter__field mc-field-group" style="display: none">
-                      <label for="mce-verify-EMAIL">Verify Email Address</label>
-                      <input type="email" value="" name="verify_email" class="required email" id="mce-EMAIL-verify" placeholder="Verify Email Address" autocomplete="off">
-                  </div>
-                  <div class="td-newsletter__field">
-                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                  </div>
-              </div>
-          </form>
-          <script type="text/javascript">
-              function resetMailForm() {
+<body class="bg-[#4e5569] flex flex-col min-h-screen">
+    <nav class="bg-[#4e5569] text-white p-5">
+        <div class="max-w-6xl mx-auto flex justify-center">
+            <a href="https://www.tampadevs.com/">
+                <img src="https://www.tampadevs.com/_assets/misc/logos/tampa-devs.svg" alt="Tampa Devs logo" class="h-8 md:h-12">
+            </a>
+        </div>
+    </nav>
+    <div class="flex-grow bg-red-500 text-white py-8">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-lg md:text-2xl font-bold flex items-center">
+                <img src="https://www.tampadevs.com/_assets/misc/icons/mail-send.svg" alt="Paper Airplane" class="h-6 mr-2"> Keep in touch
+            </h2>
+
+            <p class="mt-2">Stay informed with local tech news, upcoming events, job opportunities, and more from Tampa Devs.</p>
+            <form action="https://newsletter.api.tampa.dev/subscribe" method="post" class="mt-8" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-black">
+                    <!-- Visible fields -->
+                    <div class="form-group">
+                        <input type="text" name="firstname" placeholder="First name" autocomplete="off" class="w-full p-2 rounded-md border border-gray-300">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="lastname" placeholder="Last name" autocomplete="off" class="w-full p-2 rounded-md border border-gray-300">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required autocomplete="off" class="w-full p-2 rounded-md border border-gray-300">
+                    </div>
+                    <div aria-hidden="true" class="hidden">
+                        <input name="phone" class="required phone" id="mce-phone" value="(813) 555-0199" placeholder="Phone" autocomplete="off">
+                        <input type="email" value name="verify_email" class="required email" id="mce-EMAIL-verify" placeholder="Verify Email Address" autocomplete="off">
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-center md:justify-start">
+                    <input type="submit" value="Subscribe" name="subscribe" class="cursor-pointer bg-white text-gray-800 font-bold py-2 px-4 rounded-md hover:bg-gray-100">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="bg-cover bg-center w-full" style="background-image: url('https://www.tampadevs.com/_assets/img/tadhack-group.webp'); height: 50vh;">
+        <!-- Empty div to ensure background covers this area -->
+    </div>
+    <script>
+        function resetMailForm() {
                 document.getElementById("mc-embedded-subscribe-form").reset();
-                document.getElementById("mc-embedded-subscribe").value = "Subscribe"
-                document.getElementById("mc-embedded-subscribe").style.backgroundColor = "#fff"
-                document.getElementById("mc-embedded-subscribe").style.textTransform = "uppercase"
-                document.getElementById("mc-embedded-subscribe").style.color = "#566075"
+                document.getElementById("mc-embedded-subscribe").value = "Subscribe";
+                document.getElementById("mc-embedded-subscribe").style.backgroundColor = "#fff";
+                document.getElementById("mc-embedded-subscribe").style.textTransform = "uppercase";
+                document.getElementById("mc-embedded-subscribe").style.color = "#566075";
               }
 
               function formSubmit(e) {
@@ -98,20 +72,20 @@
         
                 req.onload = function() { 
                   document.getElementById("mc-embedded-subscribe-form").reset();
-                  document.getElementById("mc-embedded-subscribe").value = "Subscribed ✔️"
-                  document.getElementById("mc-embedded-subscribe").style.backgroundColor = "#B5E0B8"
+                  document.getElementById("mc-embedded-subscribe").value = "Subscribed ✔️";
+                  document.getElementById("mc-embedded-subscribe").style.backgroundColor = "#B5E0B8";
                   setTimeout(resetMailForm, 2000);
                   console.log(req.responseText);
                 };
       
                 req.onerror = function() {
                   document.getElementById("mc-embedded-subscribe-form").reset();
-                  document.getElementById("mc-embedded-subscribe").value = "Something Broke 😔"
-                  document.getElementById("mc-embedded-subscribe").style.color = "#fff"
-                  document.getElementById("mc-embedded-subscribe").style.textTransform = "none"
-                  document.getElementById("mc-embedded-subscribe").style.backgroundColor = "#4e5569"
+                  document.getElementById("mc-embedded-subscribe").value = "Something Broke 😔";
+                  document.getElementById("mc-embedded-subscribe").style.color = "#fff";
+                  document.getElementById("mc-embedded-subscribe").style.textTransform = "none";
+                  document.getElementById("mc-embedded-subscribe").style.backgroundColor = "#4e5569";
                   setTimeout(resetMailForm, 2000);
-                  console.log("Newsletter subscription failed.")
+                  console.log("Newsletter subscription failed.");
                 };
       
                 req.send(new FormData(e.target));
@@ -119,13 +93,8 @@
                 e.preventDefault();
               }
       
-              (function () {document.getElementById("mc-embedded-subscribe-form").addEventListener("submit", formSubmit)})();
-          </script>
-
-      </section>
-  </div>
-  <div id="people">
-      <section><img id="people-banner" src="https://cdn.mcauto-images-production.sendgrid.net/c8a480076043ee31/6b69ee5a-db76-4919-9cf3-c1fca75258d2/4032x1948.jpg"></img>
-      </section>
-  </div>
+              document.getElementById("mc-embedded-subscribe-form").addEventListener("submit", formSubmit);
+    </script>
 </body>
+
+</html>
