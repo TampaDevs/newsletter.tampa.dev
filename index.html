@@ -60,8 +60,8 @@
             <p class="mt-16 text-xs" id="website-link">Visit <a class="underline" href="https://www.tampadevs.com/">our website</a> to learn more about Tampa Devs' charitable mission.</p>
         </div>
     </div>
-    <div class="bg-cover bg-center w-full">
-        <video autoplay="" muted="" playsinline="" loop="loop" poster="https://www.tampadevs.com/_assets/img/tampa-devs-v2.webp" class="object-cover h-full w-full">
+    <div class="bg-cover bg-center w-full" style="background-image: url('https://www.tampadevs.com/_assets/img/tadhack-group.webp'); height: 50vh;">
+        <video id="looping-video" autoplay="" muted="" playsinline="" loop="loop" poster="https://www.tampadevs.com/_assets/img/tampa-devs-v2.webp" class="object-cover h-full w-full">
             <source type="video/webm" src="https://www.tampadevs.com/_assets/misc/TD_output_720_30p.webm">
             <source type="video/mp4" src="https://www.tampadevs.com/_assets/misc/TD_output_720_30p.mp4">
         </video>
@@ -106,10 +106,18 @@
 
               document.addEventListener('DOMContentLoaded', function() {
                   const queryParams = new URLSearchParams(window.location.search);
+
                   if (queryParams.has('nolinks')) {
                       const calloutElement = document.getElementById('website-link');
                       if (calloutElement) {
                           calloutElement.style.display = 'none';
+                      }
+                  }
+
+                  if (queryParams.has('novideo')) {
+                      const videoElement = document.getElementById('looping-video');
+                      if (videoElement) {
+                          videoElement.style.display = 'none';
                       }
                   }
               }
